@@ -10,17 +10,17 @@ export default function Page() {
       {/* TopNavBar */}
       <nav className="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md shadow-[0px_20px_40px_rgba(27,38,59,0.06)]">
         <div className="flex justify-between items-center px-4 md:px-8 py-4 md:py-5 max-w-screen-2xl mx-auto">
-          <div className="text-lg md:text-xl font-serif font-bold text-primary tracking-tight">
+          <div className="text-base md:text-lg font-serif font-bold text-primary tracking-tight">
             BEA Global Partners
           </div>
           <div className="hidden md:flex items-center space-x-6 lg:space-x-10">
-            <a href="#" className="text-tertiary-container font-semibold border-b-2 border-tertiary-container pb-1 text-xs lg:text-sm tracking-wide uppercase">
+            <a href="#" className="text-tertiary-container font-semibold border-b-2 border-tertiary-container pb-1 text-[10px] lg:text-xs tracking-wide uppercase">
               Services
             </a>
-            <a href="#" className="text-secondary hover:text-tertiary-container transition-all duration-300 text-xs lg:text-sm tracking-wide uppercase">
+            <a href="#" className="text-secondary hover:text-tertiary-container transition-all duration-300 text-[10px] lg:text-xs tracking-wide uppercase">
               Insights
             </a>
-            <a href="#" className="text-secondary hover:text-tertiary-container transition-all duration-300 text-xs lg:text-sm tracking-wide uppercase">
+            <a href="#" className="text-secondary hover:text-tertiary-container transition-all duration-300 text-[10px] lg:text-xs tracking-wide uppercase">
               Contact
             </a>
           </div>
@@ -53,10 +53,10 @@ export default function Page() {
             <span className="inline-block px-3 py-1 md:px-4 md:py-1 mb-4 md:mb-6 text-tertiary-fixed font-medium tracking-[0.15em] md:tracking-[0.2em] uppercase text-[10px] md:text-xs border-l-2 border-tertiary">
               Strategic Advisory Excellence
             </span>
-            <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-8xl text-white leading-[1.1] mb-6 md:mb-8 tracking-tight">
+            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-7xl text-white leading-[1.1] mb-6 md:mb-8 tracking-tight">
               Navigating the <span className="italic text-tertiary-fixed-dim">Complexity</span> of Global Markets.
             </h1>
-            <p className="text-on-primary-container text-base sm:text-lg md:text-xl max-w-2xl mb-8 md:mb-12 font-light leading-relaxed">
+            <p className="text-on-primary-container text-sm sm:text-base md:text-lg max-w-2xl mb-8 md:mb-12 font-light leading-relaxed">
               We provide bespoke strategic clarity for institutional leaders facing high-stakes regulatory landscapes and global growth opportunities.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 md:gap-6">
@@ -83,15 +83,15 @@ export default function Page() {
               transition={{ duration: 0.8 }}
               className="lg:w-3/5 order-2 lg:order-1"
             >
-              <h2 className="font-serif text-3xl md:text-4xl lg:text-6xl text-primary leading-[1.15] tracking-tight mb-6 md:mb-8">
+              <h2 className="font-serif text-2xl md:text-3xl lg:text-5xl text-primary leading-[1.15] tracking-tight mb-6 md:mb-8">
                 Strategic Insight for Complex Business Environments
               </h2>
               <div className="space-y-6 md:space-y-8">
-                <p className="text-on-surface-variant text-lg md:text-xl lg:text-2xl font-light leading-relaxed tracking-tight">
+                <p className="text-on-surface-variant text-base md:text-lg lg:text-xl font-light leading-relaxed tracking-tight">
                   Organizations today face increasingly complex regulatory landscapes, evolving risk environments, and rapidly shifting global markets.
                 </p>
                 <div className="h-px w-16 md:w-24 bg-tertiary/30"></div>
-                <p className="text-on-surface-variant/80 text-base md:text-lg lg:text-xl font-light leading-relaxed">
+                <p className="text-on-surface-variant/80 text-sm md:text-base lg:text-lg font-light leading-relaxed">
                   BEA Global Partners provides senior-level advisory services that help leaders navigate these challenges with clarity and confidence. Our work combines strategic insight, rigorous analysis, and practical implementation to support sustainable growth and resilient organizations.
                 </p>
               </div>
@@ -127,8 +127,8 @@ export default function Page() {
       <section className="py-16 md:py-24 lg:py-32 bg-surface">
         <div className="max-w-screen-2xl mx-auto px-4 md:px-8">
           <div className="text-center mb-12 md:mb-24 max-w-3xl mx-auto">
-            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-primary leading-tight mb-4 md:mb-6">Expertise for a Defined Future</h2>
-            <p className="text-secondary text-base md:text-lg font-light leading-relaxed">
+            <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl text-primary leading-tight mb-4 md:mb-6">Expertise for a Defined Future</h2>
+            <p className="text-secondary text-sm md:text-base font-light leading-relaxed">
               BEA Global Partners delivers specialized advisory services designed to mitigate risk and unlock strategic value in highly regulated environments.
             </p>
           </div>
@@ -150,7 +150,7 @@ export default function Page() {
               />
               <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors duration-500"></div>
               <div className="absolute inset-0 p-6 md:p-10 flex flex-col justify-between z-10">
-                <h3 className="text-white font-serif text-2xl md:text-4xl lg:text-5xl leading-snug max-w-lg">
+                <h3 className="text-white font-serif text-xl md:text-3xl lg:text-4xl leading-snug max-w-lg">
                   Strategy &<br/>Management Consulting
                 </h3>
                 <div className="flex justify-end">
@@ -180,7 +180,7 @@ export default function Page() {
               </div>
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-500"></div>
               <div className="relative z-10 p-6 md:p-10 h-full flex flex-col justify-between">
-                <h3 className="text-white font-serif text-2xl md:text-3xl leading-snug">
+                <h3 className="text-white font-serif text-xl md:text-2xl leading-snug">
                   Enterprise & Financial Risk<br/>management
                 </h3>
                 <div className="flex justify-end">
@@ -201,7 +201,7 @@ export default function Page() {
             >
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-500"></div>
               <div className="relative z-10 p-6 md:p-10 h-full flex flex-col justify-between">
-                <h3 className="text-primary font-serif text-2xl md:text-3xl leading-snug">
+                <h3 className="text-primary font-serif text-xl md:text-2xl leading-snug">
                   Business Development & Market Entry
                 </h3>
                 <div className="flex justify-end">
@@ -222,7 +222,7 @@ export default function Page() {
             >
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500"></div>
               <div className="relative z-10 p-6 md:p-10 h-full flex flex-col justify-between">
-                <h3 className="text-white font-serif text-2xl md:text-3xl leading-snug">
+                <h3 className="text-white font-serif text-xl md:text-2xl leading-snug">
                   Regulatory<br/>Compliance
                 </h3>
                 <div className="flex justify-end">
@@ -247,19 +247,19 @@ export default function Page() {
               transition={{ duration: 0.8 }}
               className="col-span-1 lg:col-span-5 relative z-10"
             >
-              <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-white mb-8 md:mb-12">The Curated Approach to Advisory</h2>
+              <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl text-white mb-8 md:mb-12">The Curated Approach to Advisory</h2>
               <div className="space-y-8 md:space-y-12">
                 <div>
                   <h4 className="text-tertiary-fixed font-bold text-[10px] md:text-xs uppercase tracking-widest mb-2 md:mb-3">Global Expertise</h4>
-                  <p className="text-primary-fixed-dim font-light text-base md:text-lg">Our network spans 45 countries, providing local intelligence with a global perspective.</p>
+                  <p className="text-primary-fixed-dim font-light text-sm md:text-base">Our network spans 45 countries, providing local intelligence with a global perspective.</p>
                 </div>
                 <div>
                   <h4 className="text-tertiary-fixed font-bold text-[10px] md:text-xs uppercase tracking-widest mb-2 md:mb-3">Bespoke Strategies</h4>
-                  <p className="text-primary-fixed-dim font-light text-base md:text-lg">No templates. Every engagement is a high-touch, partner-led initiative designed for your specific challenge.</p>
+                  <p className="text-primary-fixed-dim font-light text-sm md:text-base">No templates. Every engagement is a high-touch, partner-led initiative designed for your specific challenge.</p>
                 </div>
                 <div>
                   <h4 className="text-tertiary-fixed font-bold text-[10px] md:text-xs uppercase tracking-widest mb-2 md:mb-3">Institutional Trust</h4>
-                  <p className="text-primary-fixed-dim font-light text-base md:text-lg">Discretion and integrity are the foundations of our partnership with the world&apos;s leading firms.</p>
+                  <p className="text-primary-fixed-dim font-light text-sm md:text-base">Discretion and integrity are the foundations of our partnership with the world&apos;s leading firms.</p>
                 </div>
               </div>
             </motion.div>
@@ -281,7 +281,7 @@ export default function Page() {
                 <div className="absolute inset-0 bg-primary/20 mix-blend-overlay"></div>
               </div>
               <div className="absolute -bottom-6 -left-4 md:-bottom-12 md:-left-12 bg-tertiary-container p-6 md:p-12 rounded-lg max-w-[280px] md:max-w-xs shadow-2xl">
-                <p className="text-on-tertiary-container font-serif text-lg md:text-2xl italic leading-tight">
+                <p className="text-on-tertiary-container font-serif text-base md:text-xl italic leading-tight">
                   &quot;In global markets, the most significant risks are often the ones left unsaid.&quot;
                 </p>
               </div>
@@ -302,7 +302,7 @@ export default function Page() {
           >
             <div>
               <span className="text-tertiary text-[10px] md:text-xs font-bold uppercase tracking-widest block mb-2 md:mb-4">Perspective</span>
-              <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-primary">Strategic Insights</h2>
+              <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl text-primary">Strategic Insights</h2>
             </div>
             <a href="#" className="pb-1 md:pb-2 border-b border-primary text-xs md:text-sm font-semibold hover:text-tertiary hover:border-tertiary transition-all">
               View All Publications
@@ -328,8 +328,8 @@ export default function Page() {
                 />
               </div>
               <span className="text-[10px] md:text-xs font-bold text-tertiary uppercase tracking-widest mb-2 md:mb-4 block">Whitepaper — Oct 2024</span>
-              <h3 className="font-serif text-xl md:text-2xl lg:text-3xl text-primary mb-2 md:mb-4 group-hover:underline underline-offset-8 leading-tight">The Future of ASEAN Regulatory Frameworks</h3>
-              <p className="text-secondary font-light text-sm md:text-base">An in-depth analysis of emerging cross-border compliance trends in Southeast Asia.</p>
+              <h3 className="font-serif text-lg md:text-xl lg:text-2xl text-primary mb-2 md:mb-4 group-hover:underline underline-offset-8 leading-tight">The Future of ASEAN Regulatory Frameworks</h3>
+              <p className="text-secondary font-light text-xs md:text-sm">An in-depth analysis of emerging cross-border compliance trends in Southeast Asia.</p>
             </div>
 
             {/* Insight Card 2 */}
@@ -344,8 +344,8 @@ export default function Page() {
                 />
               </div>
               <span className="text-[10px] md:text-xs font-bold text-tertiary uppercase tracking-widest mb-2 md:mb-4 block">Market Update — Sept 2024</span>
-              <h3 className="font-serif text-xl md:text-2xl lg:text-3xl text-primary mb-2 md:mb-4 group-hover:underline underline-offset-8 leading-tight">Geopolitical Resilience in Global Supply Chains</h3>
-              <p className="text-secondary font-light text-sm md:text-base">Strategies for institutional investors to navigate logistical disruptions through proactive risk modeling.</p>
+              <h3 className="font-serif text-lg md:text-xl lg:text-2xl text-primary mb-2 md:mb-4 group-hover:underline underline-offset-8 leading-tight">Geopolitical Resilience in Global Supply Chains</h3>
+              <p className="text-secondary font-light text-xs md:text-sm">Strategies for institutional investors to navigate logistical disruptions through proactive risk modeling.</p>
             </div>
 
             {/* Insight Card 3 */}
@@ -360,8 +360,8 @@ export default function Page() {
                 />
               </div>
               <span className="text-[10px] md:text-xs font-bold text-tertiary uppercase tracking-widest mb-2 md:mb-4 block">Executive Brief — Aug 2024</span>
-              <h3 className="font-serif text-xl md:text-2xl lg:text-3xl text-primary mb-2 md:mb-4 group-hover:underline underline-offset-8 leading-tight">ESG 2.0: Beyond Compliance</h3>
-              <p className="text-secondary font-light text-sm md:text-base">Moving from regulatory checkboxes to strategic value creation through sustainable governance.</p>
+              <h3 className="font-serif text-lg md:text-xl lg:text-2xl text-primary mb-2 md:mb-4 group-hover:underline underline-offset-8 leading-tight">ESG 2.0: Beyond Compliance</h3>
+              <p className="text-secondary font-light text-xs md:text-sm">Moving from regulatory checkboxes to strategic value creation through sustainable governance.</p>
             </div>
           </motion.div>
         </div>
@@ -377,8 +377,8 @@ export default function Page() {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-primary mb-6 md:mb-8">Begin the Consultation</h2>
-              <p className="text-secondary text-base md:text-lg font-light mb-8 md:mb-12">
+              <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl text-primary mb-6 md:mb-8">Begin the Consultation</h2>
+              <p className="text-secondary text-sm md:text-base font-light mb-8 md:mb-12">
                 Contact our global headquarters to discuss your strategic objectives. Our advisory team is available for private briefings and institutional inquiries.
               </p>
               <div className="space-y-6 md:space-y-8">
@@ -463,29 +463,29 @@ export default function Page() {
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-12 px-6 md:px-12 py-12 md:py-16 max-w-screen-2xl mx-auto"
         >
           <div className="sm:col-span-2 lg:col-span-1">
-            <div className="text-base md:text-lg font-serif text-primary mb-4 md:mb-6 font-bold">BEA Global Partners</div>
-            <p className="text-secondary font-sans text-xs tracking-wider leading-relaxed max-w-sm">
+            <div className="text-sm md:text-base font-serif text-primary mb-4 md:mb-6 font-bold">BEA Global Partners</div>
+            <p className="text-secondary font-sans text-[10px] tracking-wider leading-relaxed max-w-sm">
               Dedicated to providing the intelligence and strategic direction required to lead in a complex world.
             </p>
           </div>
           <div>
-            <h4 className="font-serif text-base md:text-lg text-primary mb-4 md:mb-6">Global Hubs</h4>
+            <h4 className="font-serif text-sm md:text-base text-primary mb-4 md:mb-6">Global Hubs</h4>
             <ul className="space-y-3 md:space-y-4">
-              <li><a href="#" className="text-secondary font-sans text-xs tracking-wider hover:text-primary underline-offset-4 hover:underline transition-all">London</a></li>
-              <li><a href="#" className="text-secondary font-sans text-xs tracking-wider hover:text-primary underline-offset-4 hover:underline transition-all">New York</a></li>
-              <li><a href="#" className="text-secondary font-sans text-xs tracking-wider hover:text-primary underline-offset-4 hover:underline transition-all">Singapore</a></li>
+              <li><a href="#" className="text-secondary font-sans text-[10px] tracking-wider hover:text-primary underline-offset-4 hover:underline transition-all">London</a></li>
+              <li><a href="#" className="text-secondary font-sans text-[10px] tracking-wider hover:text-primary underline-offset-4 hover:underline transition-all">New York</a></li>
+              <li><a href="#" className="text-secondary font-sans text-[10px] tracking-wider hover:text-primary underline-offset-4 hover:underline transition-all">Singapore</a></li>
             </ul>
           </div>
           <div>
-            <h4 className="font-serif text-base md:text-lg text-primary mb-4 md:mb-6">Legal</h4>
+            <h4 className="font-serif text-sm md:text-base text-primary mb-4 md:mb-6">Legal</h4>
             <ul className="space-y-3 md:space-y-4">
-              <li><a href="#" className="text-secondary font-sans text-xs tracking-wider hover:text-primary underline-offset-4 hover:underline transition-all">Privacy Policy</a></li>
-              <li><a href="#" className="text-secondary font-sans text-xs tracking-wider hover:text-primary underline-offset-4 hover:underline transition-all">Terms</a></li>
+              <li><a href="#" className="text-secondary font-sans text-[10px] tracking-wider hover:text-primary underline-offset-4 hover:underline transition-all">Privacy Policy</a></li>
+              <li><a href="#" className="text-secondary font-sans text-[10px] tracking-wider hover:text-primary underline-offset-4 hover:underline transition-all">Terms</a></li>
             </ul>
           </div>
           <div>
-            <h4 className="font-serif text-base md:text-lg text-primary mb-4 md:mb-6">Intelligence</h4>
-            <a href="#" className="text-tertiary-container font-sans text-xs tracking-wider block mb-3 md:mb-4 hover:underline">Newsletter Signup</a>
+            <h4 className="font-serif text-sm md:text-base text-primary mb-4 md:mb-6">Intelligence</h4>
+            <a href="#" className="text-tertiary-container font-sans text-[10px] tracking-wider block mb-3 md:mb-4 hover:underline">Newsletter Signup</a>
             <div className="flex items-center border-b border-outline-variant pb-2">
               <input 
                 type="email" 
