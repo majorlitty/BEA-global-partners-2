@@ -1,15 +1,15 @@
 import type { Metadata } from 'next';
-import { Inter, Noto_Serif } from 'next/font/google';
+import { Raleway, Lusitana } from 'next/font/google';
 import './globals.css';
 
-const inter = Inter({
+const raleway = Raleway({
   subsets: ['latin'],
   variable: '--font-sans',
 });
 
-const notoSerif = Noto_Serif({
+const lusitana = Lusitana({
+  weight: ['400', '700'],
   subsets: ['latin'],
-  style: ['normal', 'italic'],
   variable: '--font-serif',
 });
 
@@ -24,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${notoSerif.variable}`}>
+    <html lang="en" className={`${raleway.variable} ${lusitana.variable}`}>
       <body className="font-sans bg-surface text-primary antialiased selection:bg-tertiary-container selection:text-on-tertiary-container" suppressHydrationWarning>
         {children}
       </body>
