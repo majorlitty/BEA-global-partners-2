@@ -3,8 +3,111 @@
 import Image from "next/image";
 import { ArrowRight, MapPin, Mail, ArrowUpRight, Globe, Share2 } from "lucide-react";
 import * as motion from "motion/react-client";
+import { useState } from "react";
 
 export default function Page() {
+  const [contactForm, setContactForm] = useState({
+    fullName: "",
+    email: "",
+    organization: "",
+    message: ""
+  });
+  const [contactErrors, setContactErrors] = useState({
+    fullName: "",
+    email: "",
+    organization: ""
+  });
+  const [contactTouched, setContactTouched] = useState({
+    fullName: false,
+    email: false,
+    organization: false
+  });
+
+  const [newsletterEmail, setNewsletterEmail] = useState("");
+  const [newsletterError, setNewsletterError] = useState("");
+  const [newsletterTouched, setNewsletterTouched] = useState(false);
+
+  const validateEmail = (email: string) => {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  };
+
+  const validateContactField = (field: string, value: string) => {
+    let error = "";
+    if (field === "fullName") {
+      if (!value.trim()) error = "Full Name is required";
+      else if (value.trim().length < 2) error = "Must be at least 2 characters";
+    } else if (field === "email") {
+      if (!value.trim()) error = "Email is required";
+      else if (!validateEmail(value)) error = "Please enter a valid email address";
+    } else if (field === "organization") {
+      if (!value.trim()) error = "Organization is required";
+      else if (value.trim().length < 2) error = "Must be at least 2 characters";
+    }
+    setContactErrors(prev => ({ ...prev, [field]: error }));
+    return error;
+  };
+
+  const handleContactChange = (field: string, value: string) => {
+    setContactForm(prev => ({ ...prev, [field]: value }));
+    if (contactTouched[field as keyof typeof contactTouched]) {
+      validateContactField(field, value);
+    }
+  };
+
+  const handleContactBlur = (field: string) => {
+    setContactTouched(prev => ({ ...prev, [field]: true }));
+    validateContactField(field, contactForm[field as keyof typeof contactForm]);
+  };
+
+  const handleContactSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setContactTouched({ fullName: true, email: true, organization: true });
+    
+    const nameErr = validateContactField("fullName", contactForm.fullName);
+    const emailErr = validateContactField("email", contactForm.email);
+    const orgErr = validateContactField("organization", contactForm.organization);
+    
+    if (!nameErr && !emailErr && !orgErr) {
+      // Proceed with form submission
+      console.log("Form submitted", contactForm);
+      // Reset form or show success message
+    }
+  };
+
+  const validateNewsletter = (email: string) => {
+    let error = "";
+    if (!email.trim()) {
+      error = "Email is required";
+    } else if (!validateEmail(email)) {
+      error = "Please enter a valid email address";
+    }
+    setNewsletterError(error);
+    return error;
+  };
+
+  const handleNewsletterChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    setNewsletterEmail(value);
+    if (newsletterTouched) {
+      validateNewsletter(value);
+    }
+  };
+
+  const handleNewsletterBlur = () => {
+    setNewsletterTouched(true);
+    validateNewsletter(newsletterEmail);
+  };
+
+  const handleNewsletterSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setNewsletterTouched(true);
+    const error = validateNewsletter(newsletterEmail);
+    if (!error) {
+      console.log("Newsletter signup", newsletterEmail);
+      // Proceed with signup
+    }
+  };
+
   return (
     <main className="min-h-screen">
       {/* TopNavBar */}
@@ -410,34 +513,54 @@ export default function Page() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="bg-surface-container-low p-6 md:p-12 rounded-[2rem]"
             >
-              <form className="space-y-6 md:space-y-8" onSubmit={(e) => e.preventDefault()}>
+              <form className="space-y-6 md:space-y-8" onSubmit={handleContactSubmit}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
                   <div className="relative">
                     <input 
                       type="text" 
                       placeholder="Full Name" 
-                      className="w-full bg-transparent border-0 border-b-2 border-outline-variant py-3 md:py-4 focus:outline-none focus:border-tertiary transition-colors placeholder:text-outline text-primary text-sm md:text-base"
+                      value={contactForm.fullName}
+                      onChange={(e) => handleContactChange("fullName", e.target.value)}
+                      onBlur={() => handleContactBlur("fullName")}
+                      className={`w-full bg-transparent border-0 border-b-2 py-3 md:py-4 focus:outline-none transition-colors placeholder:text-outline text-primary text-sm md:text-base ${contactErrors.fullName ? 'border-red-500 focus:border-red-500' : 'border-outline-variant focus:border-tertiary'}`}
                     />
+                    {contactErrors.fullName && (
+                      <p className="absolute -bottom-5 left-0 text-red-500 text-[10px]">{contactErrors.fullName}</p>
+                    )}
                   </div>
                   <div className="relative">
                     <input 
                       type="email" 
                       placeholder="Professional Email" 
-                      className="w-full bg-transparent border-0 border-b-2 border-outline-variant py-3 md:py-4 focus:outline-none focus:border-tertiary transition-colors placeholder:text-outline text-primary text-sm md:text-base"
+                      value={contactForm.email}
+                      onChange={(e) => handleContactChange("email", e.target.value)}
+                      onBlur={() => handleContactBlur("email")}
+                      className={`w-full bg-transparent border-0 border-b-2 py-3 md:py-4 focus:outline-none transition-colors placeholder:text-outline text-primary text-sm md:text-base ${contactErrors.email ? 'border-red-500 focus:border-red-500' : 'border-outline-variant focus:border-tertiary'}`}
                     />
+                    {contactErrors.email && (
+                      <p className="absolute -bottom-5 left-0 text-red-500 text-[10px]">{contactErrors.email}</p>
+                    )}
                   </div>
                 </div>
                 <div className="relative">
                   <input 
                     type="text" 
                     placeholder="Organization" 
-                    className="w-full bg-transparent border-0 border-b-2 border-outline-variant py-3 md:py-4 focus:outline-none focus:border-tertiary transition-colors placeholder:text-outline text-primary text-sm md:text-base"
+                    value={contactForm.organization}
+                    onChange={(e) => handleContactChange("organization", e.target.value)}
+                    onBlur={() => handleContactBlur("organization")}
+                    className={`w-full bg-transparent border-0 border-b-2 py-3 md:py-4 focus:outline-none transition-colors placeholder:text-outline text-primary text-sm md:text-base ${contactErrors.organization ? 'border-red-500 focus:border-red-500' : 'border-outline-variant focus:border-tertiary'}`}
                   />
+                  {contactErrors.organization && (
+                    <p className="absolute -bottom-5 left-0 text-red-500 text-[10px]">{contactErrors.organization}</p>
+                  )}
                 </div>
                 <div className="relative">
                   <textarea 
                     placeholder="How can we assist you?" 
                     rows={4}
+                    value={contactForm.message}
+                    onChange={(e) => handleContactChange("message", e.target.value)}
                     className="w-full bg-transparent border-0 border-b-2 border-outline-variant py-3 md:py-4 focus:outline-none focus:border-tertiary transition-colors placeholder:text-outline text-primary resize-none text-sm md:text-base"
                   ></textarea>
                 </div>
@@ -486,14 +609,24 @@ export default function Page() {
           <div>
             <h4 className="font-serif text-sm md:text-base text-primary mb-4 md:mb-6">Intelligence</h4>
             <a href="#" className="text-tertiary-container font-sans text-[10px] tracking-wider block mb-3 md:mb-4 hover:underline">Newsletter Signup</a>
-            <div className="flex items-center border-b border-outline-variant pb-2">
-              <input 
-                type="email" 
-                placeholder="email@address.com" 
-                className="bg-transparent border-0 text-xs w-full focus:outline-none placeholder:text-outline text-primary"
-              />
-              <ArrowUpRight className="w-4 h-4 text-outline" />
-            </div>
+            <form onSubmit={handleNewsletterSubmit} className="relative">
+              <div className={`flex items-center border-b pb-2 ${newsletterError ? 'border-red-500' : 'border-outline-variant'}`}>
+                <input 
+                  type="email" 
+                  placeholder="email@address.com" 
+                  value={newsletterEmail}
+                  onChange={handleNewsletterChange}
+                  onBlur={handleNewsletterBlur}
+                  className="bg-transparent border-0 text-xs w-full focus:outline-none placeholder:text-outline text-primary"
+                />
+                <button type="submit" className="hover:text-tertiary-container transition-colors">
+                  <ArrowUpRight className="w-4 h-4 text-outline" />
+                </button>
+              </div>
+              {newsletterError && (
+                <p className="absolute -bottom-5 left-0 text-red-500 text-[10px]">{newsletterError}</p>
+              )}
+            </form>
           </div>
         </motion.div>
         <motion.div 
