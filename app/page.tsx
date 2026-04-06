@@ -143,7 +143,7 @@ export default function Page() {
       <section className="relative min-h-[100svh] flex items-center overflow-hidden pt-28 md:pt-40 lg:pt-48 pb-16 md:pb-32 lg:pb-40">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuB95TTJAz11jlu0EBMnWQ1ZYCcuPxkkVmldnzvBtCQmM2kLatfMwsVF0xoiwvhR_vUf1jcCIJRLcLvKPj0H9O81ehf4EmNaS5AzHkIQoIDV-3TJ_6qCe4IBMAsZgutUmxL4NrCXPl97y2HaaGDNfxQi5ligs6bIsISkVAK2PTfut21powNlxfXDUCjo0m6uR-LFngYzutaF-aQ0tmMGIfh8bcb9PHCMauJGnoBdGaadjhKYkERaGY_d6l11G0NTEPi7cB87Og6xaYs"
+            src="https://i.postimg.cc/pLxxGGVL/pexels-vlada-karpovich-7433847.jpg"
             alt="BEA Global Hero"
             fill
             className="object-cover grayscale brightness-[0.3]"
@@ -214,7 +214,7 @@ export default function Page() {
             >
               <div className="relative rounded-[2rem] overflow-hidden shadow-[0px_20px_40px_rgba(27,38,59,0.1)] aspect-[4/5] lg:aspect-square">
                 <Image
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0XIWnUISLX4Tat_HQgxwn_6Rul4jSdxE5onz__tzdwET5Pd12o3Pqbx3DxDLnxHkE96UhzrwQcnfgCxFXhV5sp0YSTQM0OSo6ErH21tVuV6H0aR87dTm2Vx1OoCviCl5wE3SNfjwBwG33y-B7muyvw-PWIzTJwnS6E9F6IRtvRQMJI08Oiv97hkhqqPqfQkWdMHv6saYjO1w36XcLU7BM_2yj7FgqV8Md8P6VttBTdmR__b5ZXK0tdsfbeBYGOlXW_YT-5AYXwgI"
+                  src="https://i.postimg.cc/Bv9hckJ8/pexels_yankrukov_7693740.jpg"
                   alt="Global Strategic Advisory"
                   fill
                   className="object-cover grayscale brightness-75 hover:grayscale-0 transition-all duration-700"
@@ -251,7 +251,7 @@ export default function Page() {
               className="relative group h-[350px] md:h-[450px] overflow-hidden rounded-[2rem] transition-all duration-500 hover:shadow-2xl hover:-translate-y-1 hover:scale-[1.02] md:col-span-2"
             >
               <Image
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB95TTJAz11jlu0EBMnWQ1ZYCcuPxkkVmldnzvBtCQmM2kLatfMwsVF0xoiwvhR_vUf1jcCIJRLcLvKPj0H9O81ehf4EmNaS5AzHkIQoIDV-3TJ_6qCe4IBMAsZgutUmxL4NrCXPl97y2HaaGDNfxQi5ligs6bIsISkVAK2PTfut21powNlxfXDUCjo0m6uR-LFngYzutaF-aQ0tmMGIfh8bcb9PHCMauJGnoBdGaadjhKYkERaGY_d6l11G0NTEPi7cB87Og6xaYs"
+                src="https://i.postimg.cc/W1JWZTcv/pexels_silverkblack_36766695.jpg"
                 alt="Strategy & Management"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -280,7 +280,7 @@ export default function Page() {
             >
               <div className="absolute inset-0 opacity-40 mix-blend-overlay">
                 <Image
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtbEatnheJ8jyMmPws1Q_huLp1Xn2XPxrlryfSomrUvnwzCpY9CndbWG_FCXz0-g4uiyLmk8TVuupBxmGx0yJ8gbJpB7RHKcaZI86FnDUFzJlzsGpXbn7pnDCc0mbiCHbSKYeX8u3D3dMwLORDsmojhmZr8Y7jd0GcrooMKTOLC0KkyvG1EdTzqnjMsZFXITZe5xj28oe_lZy2WJfAyJrB1WgMDYmMRdJIvgodvWnksWpmVNDJs1fz_yzLl0-dCxJLr_83u5Eo5lE"
+                  src="https://i.postimg.cc/W4L96Csd/pexels_gustavo_fring_6285066.jpg"
                   alt="Risk Management"
                   fill
                   className="object-cover grayscale"
@@ -306,15 +306,22 @@ export default function Page() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="relative group h-[350px] md:h-[450px] overflow-hidden rounded-[2rem] bg-[#D4E4F6] transition-all duration-500 hover:shadow-2xl hover:-translate-y-1 hover:scale-[1.02]"
+              className="relative group h-[350px] md:h-[450px] overflow-hidden rounded-[2rem] transition-all duration-500 hover:shadow-2xl hover:-translate-y-1 hover:scale-[1.02]"
             >
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-500"></div>
+              <Image
+                src="https://i.postimg.cc/PrJFt16v/pexels_khwanchai_12885860.jpg"
+                alt="Business Development & Market Entry"
+                fill
+                className="object-cover transition-transform duration-700 group-hover:scale-110 grayscale"
+                referrerPolicy="no-referrer"
+              />
+              <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors duration-500"></div>
               <div className="relative z-10 p-6 md:p-10 h-full flex flex-col justify-between">
-                <h3 className="text-primary font-serif text-xl md:text-2xl leading-snug">
+                <h3 className="text-white font-serif text-xl md:text-2xl leading-snug">
                   Business Development & Market Entry
                 </h3>
                 <div className="flex justify-end">
-                  <button className="w-10 h-10 md:w-12 md:h-12 rounded-full border border-primary/20 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                  <button className="w-10 h-10 md:w-12 md:h-12 rounded-full border border-white/40 flex items-center justify-center text-white group-hover:bg-white group-hover:text-primary transition-all duration-300">
                     <ArrowRight className="w-4 h-4 md:w-5 md:h-5" />
                   </button>
                 </div>
@@ -327,15 +334,22 @@ export default function Page() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.3 }}
-              className="relative group h-[350px] md:h-[450px] overflow-hidden rounded-[2rem] bg-[#A8B5A2] transition-all duration-500 hover:shadow-2xl hover:-translate-y-1 hover:scale-[1.02] lg:col-span-2"
+              className="relative group h-[350px] md:h-[450px] overflow-hidden rounded-[2rem] transition-all duration-500 hover:shadow-2xl hover:-translate-y-1 hover:scale-[1.02] lg:col-span-2"
             >
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500"></div>
+              <Image
+                src="https://i.postimg.cc/vmnrYtxX/pexels-yankrukov-7693715-(2).jpg"
+                alt="Regulatory Compliance"
+                fill
+                className="object-cover transition-transform duration-700 group-hover:scale-110 grayscale"
+                referrerPolicy="no-referrer"
+              />
+              <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors duration-500"></div>
               <div className="relative z-10 p-6 md:p-10 h-full flex flex-col justify-between">
                 <h3 className="text-white font-serif text-xl md:text-2xl leading-snug">
                   Regulatory<br/>Compliance
                 </h3>
                 <div className="flex justify-end">
-                  <button className="w-10 h-10 md:w-12 md:h-12 rounded-full border border-white/30 flex items-center justify-center text-white group-hover:bg-white group-hover:text-primary transition-all duration-300">
+                  <button className="w-10 h-10 md:w-12 md:h-12 rounded-full border border-white/40 flex items-center justify-center text-white group-hover:bg-white group-hover:text-primary transition-all duration-300">
                     <ArrowRight className="w-4 h-4 md:w-5 md:h-5" />
                   </button>
                 </div>
