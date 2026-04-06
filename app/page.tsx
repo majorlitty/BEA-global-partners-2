@@ -113,8 +113,14 @@ export default function Page() {
       {/* TopNavBar */}
       <nav className="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md shadow-[0px_20px_40px_rgba(27,38,59,0.06)]">
         <div className="flex justify-between items-center px-4 md:px-8 py-4 md:py-5 max-w-screen-2xl mx-auto">
-          <div className="text-base md:text-lg font-serif font-bold text-primary tracking-tight">
-            BEA Global Partners
+          <div className="relative h-10 w-40 md:h-12 md:w-48">
+            <Image 
+              src="https://i.postimg.cc/Bvnw2L9G/Black-and-White-Modern-Creative-Agency-Logo-(11).png" 
+              alt="BEA Global Partners" 
+              fill 
+              className="object-contain object-left" 
+              referrerPolicy="no-referrer"
+            />
           </div>
           <div className="hidden md:flex items-center space-x-6 lg:space-x-10">
             <a href="#" className="text-tertiary-container font-semibold border-b-2 border-tertiary-container pb-1 text-[10px] lg:text-xs tracking-wide uppercase">
@@ -586,7 +592,15 @@ export default function Page() {
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-12 px-6 md:px-12 py-12 md:py-16 max-w-screen-2xl mx-auto"
         >
           <div className="sm:col-span-2 lg:col-span-1">
-            <div className="text-sm md:text-base font-serif text-primary mb-4 md:mb-6 font-bold">BEA Global Partners</div>
+            <div className="relative h-10 w-40 md:h-12 md:w-48 mb-4 md:mb-6">
+              <Image 
+                src="https://i.postimg.cc/Bvnw2L9G/Black-and-White-Modern-Creative-Agency-Logo-(11).png" 
+                alt="BEA Global Partners" 
+                fill 
+                className="object-contain object-left" 
+                referrerPolicy="no-referrer"
+              />
+            </div>
             <p className="text-secondary font-sans text-[10px] tracking-wider leading-relaxed max-w-sm">
               Dedicated to providing the intelligence and strategic direction required to lead in a complex world.
             </p>
