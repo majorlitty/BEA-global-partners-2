@@ -395,7 +395,7 @@ export default function Page() {
             >
               <div className="aspect-[4/5] md:aspect-square relative overflow-hidden rounded-lg">
                 <Image
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtbEatnheJ8jyMmPws1Q_huLp1Xn2XPxrlryfSomrUvnwzCpY9CndbWG_FCXz0-g4uiyLmk8TVuupBxmGx0yJ8gbJpB7RHKcaZI86FnDUFzJlzsGpXbn7pnDCc0mbiCHbSKYeX8u3D3dMwLORDsmojhmZr8Y7jd0GcrooMKTOLC0KkyvG1EdTzqnjMsZFXITZe5xj28oe_lZy2WJfAyJrB1WgMDYmMRdJIvgodvWnksWpmVNDJs1fz_yzLl0-dCxJLr_83u5Eo5lE"
+                  src="https://i.postimg.cc/PrJFt16v/pexels_khwanchai_12885860.jpg"
                   alt="Expertise"
                   fill
                   className="object-cover"
