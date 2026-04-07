@@ -64,7 +64,7 @@ export default function ServicesPage() {
       id: "strategy",
       title: "Strategy & Management Consulting",
       overview: "Organizations operate in increasingly competitive and dynamic markets. BEA Global Partners works with leadership teams to clarify strategic direction, strengthen competitive positioning, and support long-term value creation.",
-      image: "https://picsum.photos/seed/strategyconsulting1/800/1000",
+      image: "https://i.postimg.cc/VNcMysbn/pexels_khwanchai_12885860.jpg",
       capabilities: [
         "Corporate & Business Unit Strategy",
         "Operating Model Design",
@@ -103,7 +103,7 @@ export default function ServicesPage() {
       id: "risk",
       title: "Enterprise & Financial Risk Management",
       overview: "Effective risk management is central to organizational resilience. The firm helps clients build risk frameworks that anticipate emerging threats while enabling confident decision-making.",
-      image: "https://picsum.photos/seed/riskmanagement2/800/1000",
+      image: "https://i.postimg.cc/fbjdM4cD/pexels_tiger_lily_7109205.jpg",
       capabilities: [
         "Enterprise Risk Frameworks",
         "Financial Risk Modeling",
@@ -142,7 +142,7 @@ export default function ServicesPage() {
       id: "compliance",
       title: "Regulatory Compliance",
       overview: "Operating across jurisdictions requires sophisticated compliance capabilities. BEA Global Partners helps organizations design and implement governance and compliance systems aligned with regulatory expectations.",
-      image: "https://picsum.photos/seed/regulatorycompliance3/800/1000",
+      image: "https://i.postimg.cc/NMsHMND2/pexels_gustavo_fring_6285066.jpg",
       capabilities: [
         "Regulatory Strategy & Mapping",
         "Compliance Program Design",
@@ -181,7 +181,7 @@ export default function ServicesPage() {
       id: "market-entry",
       title: "Business Development & Market Entry",
       overview: "International growth requires strategic clarity and local insight. The firm supports clients entering new markets, building strategic partnerships, and developing sustainable growth strategies.",
-      image: "https://picsum.photos/seed/marketentry4/800/1000",
+      image: "https://i.postimg.cc/tTqxTrk7/pexels_yankrukov_7693740.jpg",
       capabilities: [
         "Market Feasibility & Sizing",
         "Partner Identification & Diligence",
@@ -334,10 +334,9 @@ export default function ServicesPage() {
                       src={service.image}
                       alt={service.title}
                       fill
-                      className="object-cover grayscale hover:grayscale-0 transition-all duration-1000 scale-105 hover:scale-100"
+                      className="object-cover transition-all duration-1000 scale-105 hover:scale-100"
                       referrerPolicy="no-referrer"
                     />
-                    <div className="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
                   </div>
                 </motion.div>
 
