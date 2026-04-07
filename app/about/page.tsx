@@ -52,28 +52,32 @@ export default function AboutPage() {
       title: "Managing Partner",
       background: "Former Managing Director at a top-tier global investment bank with over 20 years of experience in cross-border M&A and corporate strategy.",
       expertise: "Corporate Strategy, Mergers & Acquisitions, Global Markets",
-      experience: "Finance, Technology, Healthcare"
+      experience: "Finance, Technology, Healthcare",
+      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop"
     },
     {
       name: "Marcus Thorne",
       title: "Director of Strategy",
       background: "15+ years advising Fortune 500 companies on market entry and operational restructuring. Previously a partner at a leading management consulting firm.",
       expertise: "Market Entry, Operational Restructuring, Growth Strategy",
-      experience: "Manufacturing, Consumer Goods, Energy"
+      experience: "Manufacturing, Consumer Goods, Energy",
+      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop"
     },
     {
       name: "Sarah Jenkins",
       title: "Director of Risk & Compliance",
       background: "Former Chief Compliance Officer for a multinational financial institution. Expert in navigating complex regulatory environments across North America and Europe.",
       expertise: "Regulatory Compliance, Enterprise Risk Management, Corporate Governance",
-      experience: "Financial Services, Pharmaceuticals, Telecommunications"
+      experience: "Financial Services, Pharmaceuticals, Telecommunications",
+      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=800&auto=format&fit=crop"
     },
     {
       name: "David Chen",
       title: "Director of Global Partnerships",
       background: "Extensive background in international trade and diplomacy. Has successfully negotiated joint ventures and strategic alliances in emerging markets.",
       expertise: "Strategic Alliances, Joint Ventures, Emerging Markets",
-      experience: "Logistics, Infrastructure, Technology"
+      experience: "Logistics, Infrastructure, Technology",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop"
     }
   ];
 
@@ -144,7 +148,7 @@ export default function AboutPage() {
       <section className="relative min-h-[60svh] md:min-h-[80svh] flex items-center justify-center overflow-hidden pt-24">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://picsum.photos/seed/corporatehq/1920/1080"
+            src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2940&auto=format&fit=crop"
             alt="Corporate Headquarters"
             fill
             className="object-cover grayscale brightness-[0.4]"
@@ -186,7 +190,7 @@ export default function AboutPage() {
             >
               <div className="relative aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl">
                 <Image 
-                  src="https://picsum.photos/seed/boardroom/800/1000"
+                  src="https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=2940&auto=format&fit=crop"
                   alt="Boardroom Strategy"
                   fill
                   className="object-cover grayscale hover:grayscale-0 transition-all duration-1000 scale-105 hover:scale-100"
@@ -226,7 +230,7 @@ export default function AboutPage() {
       <section className="py-24 md:py-32 bg-primary relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://picsum.photos/seed/abstractmap/1920/1080"
+            src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2940&auto=format&fit=crop"
             alt="Abstract Map"
             fill
             className="object-cover opacity-10 mix-blend-overlay grayscale"
@@ -279,7 +283,7 @@ export default function AboutPage() {
                 className="group relative aspect-[3/4] rounded-2xl overflow-hidden cursor-pointer shadow-lg"
               >
                 <Image
-                  src={`https://picsum.photos/seed/${leader.name.replace(' ', '')}Portrait/600/800`}
+                  src={leader.image}
                   alt={leader.name}
                   fill
                   className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"

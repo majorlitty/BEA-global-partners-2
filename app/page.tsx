@@ -286,7 +286,7 @@ export default function Page() {
               className="relative group h-[350px] md:h-[450px] overflow-hidden rounded-[2rem] transition-all duration-500 hover:shadow-2xl hover:-translate-y-1 hover:scale-[1.02] md:col-span-2"
             >
               <Image
-                src="https://i.postimg.cc/W1JWZTcv/pexels_silverkblack_36766695.jpg"
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2940&auto=format&fit=crop"
                 alt="Strategy & Management"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -315,7 +315,7 @@ export default function Page() {
             >
               <div className="absolute inset-0 opacity-40 mix-blend-overlay">
                 <Image
-                  src="https://i.postimg.cc/W4L96Csd/pexels_gustavo_fring_6285066.jpg"
+                  src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=2940&auto=format&fit=crop"
                   alt="Risk Management"
                   fill
                   className="object-cover grayscale"
@@ -344,7 +344,7 @@ export default function Page() {
               className="relative group h-[350px] md:h-[450px] overflow-hidden rounded-[2rem] transition-all duration-500 hover:shadow-2xl hover:-translate-y-1 hover:scale-[1.02]"
             >
               <Image
-                src="https://i.postimg.cc/PrJFt16v/pexels_khwanchai_12885860.jpg"
+                src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2940&auto=format&fit=crop"
                 alt="Business Development & Market Entry"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-110 grayscale"
@@ -372,7 +372,7 @@ export default function Page() {
               className="relative group h-[350px] md:h-[450px] overflow-hidden rounded-[2rem] transition-all duration-500 hover:shadow-2xl hover:-translate-y-1 hover:scale-[1.02] lg:col-span-2"
             >
               <Image
-                src="https://i.postimg.cc/vmnrYtxX/pexels-yankrukov-7693715-(2).jpg"
+                src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?q=80&w=2940&auto=format&fit=crop"
                 alt="Regulatory Compliance"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-110 grayscale"

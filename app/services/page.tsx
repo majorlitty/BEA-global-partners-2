@@ -64,7 +64,7 @@ export default function ServicesPage() {
       id: "strategy",
       title: "Strategy & Management Consulting",
       overview: "Organizations operate in increasingly competitive and dynamic markets. BEA Global Partners works with leadership teams to clarify strategic direction, strengthen competitive positioning, and support long-term value creation.",
-      image: "https://i.postimg.cc/VNcMysbn/pexels_khwanchai_12885860.jpg",
+      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2940&auto=format&fit=crop",
       capabilities: [
         "Corporate & Business Unit Strategy",
         "Operating Model Design",
@@ -103,7 +103,7 @@ export default function ServicesPage() {
       id: "risk",
       title: "Enterprise & Financial Risk Management",
       overview: "Effective risk management is central to organizational resilience. The firm helps clients build risk frameworks that anticipate emerging threats while enabling confident decision-making.",
-      image: "https://i.postimg.cc/fbjdM4cD/pexels_tiger_lily_7109205.jpg",
+      image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=2940&auto=format&fit=crop",
       capabilities: [
         "Enterprise Risk Frameworks",
         "Financial Risk Modeling",
@@ -142,7 +142,7 @@ export default function ServicesPage() {
       id: "compliance",
       title: "Regulatory Compliance",
       overview: "Operating across jurisdictions requires sophisticated compliance capabilities. BEA Global Partners helps organizations design and implement governance and compliance systems aligned with regulatory expectations.",
-      image: "https://i.postimg.cc/NMsHMND2/pexels_gustavo_fring_6285066.jpg",
+      image: "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?q=80&w=2940&auto=format&fit=crop",
       capabilities: [
         "Regulatory Strategy & Mapping",
         "Compliance Program Design",
@@ -181,7 +181,7 @@ export default function ServicesPage() {
       id: "market-entry",
       title: "Business Development & Market Entry",
       overview: "International growth requires strategic clarity and local insight. The firm supports clients entering new markets, building strategic partnerships, and developing sustainable growth strategies.",
-      image: "https://i.postimg.cc/tTqxTrk7/pexels_yankrukov_7693740.jpg",
+      image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2940&auto=format&fit=crop",
       capabilities: [
         "Market Feasibility & Sizing",
         "Partner Identification & Diligence",
@@ -285,7 +285,7 @@ export default function ServicesPage() {
       <section className="relative min-h-[60svh] md:min-h-[70svh] flex items-center justify-center overflow-hidden pt-24">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://picsum.photos/seed/serviceshero/1920/1080"
+            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2940&auto=format&fit=crop"
             alt="Global Services"
             fill
             className="object-cover grayscale brightness-[0.35]"
