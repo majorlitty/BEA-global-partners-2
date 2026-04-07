@@ -372,7 +372,7 @@ export default function Page() {
               className="relative group h-[350px] md:h-[450px] overflow-hidden rounded-[2rem] transition-all duration-500 hover:shadow-2xl hover:-translate-y-1 hover:scale-[1.02] lg:col-span-2"
             >
               <Image
-                src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?q=80&w=2940&auto=format&fit=crop"
+                src="https://i.postimg.cc/kGs3Cvwr/pexels-silverkblack-36766695.jpg"
                 alt="Regulatory Compliance"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-110 grayscale"

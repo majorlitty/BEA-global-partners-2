@@ -142,7 +142,7 @@ export default function ServicesPage() {
       id: "compliance",
       title: "Regulatory Compliance",
       overview: "Operating across jurisdictions requires sophisticated compliance capabilities. BEA Global Partners helps organizations design and implement governance and compliance systems aligned with regulatory expectations.",
-      image: "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?q=80&w=2940&auto=format&fit=crop",
+      image: "https://i.postimg.cc/kGs3Cvwr/pexels-silverkblack-36766695.jpg",
       capabilities: [
         "Regulatory Strategy & Mapping",
         "Compliance Program Design",
