@@ -83,6 +83,28 @@ export default function AboutPage() {
 
   return (
     <main className="min-h-screen bg-surface">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "AboutPage",
+            "mainEntity": {
+              "@type": "Organization",
+              "name": "BEA Global Partners",
+              "description": "BEA Global Partners was founded to support organizations navigating complex strategic, regulatory, and operational environments.",
+              "url": "https://beaglobalpartners.com/about",
+              "logo": "https://i.postimg.cc/Bvnw2L9G/Black-and-White-Modern-Creative-Agency-Logo-(11).png",
+              "founder": [
+                {
+                  "@type": "Person",
+                  "name": "Eleanor Vance"
+                }
+              ]
+            }
+          })
+        }}
+      />
       {/* TopNavBar */}
       <nav className="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md shadow-[0px_20px_40px_rgba(27,38,59,0.06)]">
         <div className="flex justify-between items-center px-4 md:px-8 py-4 md:py-5 max-w-screen-2xl mx-auto">

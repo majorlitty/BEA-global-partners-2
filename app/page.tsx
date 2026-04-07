@@ -113,6 +113,32 @@ export default function Page() {
 
   return (
     <main className="min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ProfessionalService",
+            "name": "BEA Global Partners",
+            "image": "https://i.postimg.cc/Bvnw2L9G/Black-and-White-Modern-Creative-Agency-Logo-(11).png",
+            "description": "BEA Global Partners delivers specialized advisory services designed to mitigate risk and unlock strategic value in highly regulated environments.",
+            "url": "https://beaglobalpartners.com",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "1200 Avenue of the Americas",
+              "addressLocality": "New York",
+              "addressRegion": "NY",
+              "postalCode": "10036",
+              "addressCountry": "US"
+            },
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+1-212-555-0198",
+              "contactType": "customer service"
+            }
+          })
+        }}
+      />
       {/* TopNavBar */}
       <nav className="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md shadow-[0px_20px_40px_rgba(27,38,59,0.06)]">
         <div className="flex justify-between items-center px-4 md:px-8 py-4 md:py-5 max-w-screen-2xl mx-auto">
