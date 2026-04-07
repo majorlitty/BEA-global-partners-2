@@ -129,9 +129,9 @@ export default function Page() {
             <Link href="/about" className="text-secondary hover:text-tertiary-container transition-all duration-300 text-[10px] lg:text-xs tracking-wide uppercase">
               About Us
             </Link>
-            <a href="#services" className="text-secondary hover:text-tertiary-container transition-all duration-300 text-[10px] lg:text-xs tracking-wide uppercase">
+            <Link href="/services" className="text-secondary hover:text-tertiary-container transition-all duration-300 text-[10px] lg:text-xs tracking-wide uppercase">
               Services
-            </a>
+            </Link>
             <a href="#insights" className="text-secondary hover:text-tertiary-container transition-all duration-300 text-[10px] lg:text-xs tracking-wide uppercase">
               Insights
             </a>
