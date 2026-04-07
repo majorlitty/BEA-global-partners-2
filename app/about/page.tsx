@@ -2,11 +2,12 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, ArrowUpRight, Globe, Share2 } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Globe, Share2, Menu, X } from "lucide-react";
 import * as motion from "motion/react-client";
 import { useState } from "react";
 
 export default function AboutPage() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [newsletterEmail, setNewsletterEmail] = useState("");
   const [newsletterError, setNewsletterError] = useState("");
   const [newsletterTouched, setNewsletterTouched] = useState(false);
@@ -106,10 +107,37 @@ export default function AboutPage() {
               Contact
             </Link>
           </div>
-          <button className="bg-primary text-on-primary px-4 py-2 md:px-6 md:py-2.5 rounded-lg font-medium text-xs md:text-sm hover:opacity-90 active:scale-95 transition-all">
-            Inquire Now
-          </button>
+          <div className="flex items-center gap-3 md:gap-4">
+            <button className="hidden sm:block bg-primary text-on-primary px-4 py-2 md:px-6 md:py-2.5 rounded-lg font-medium text-xs md:text-sm hover:opacity-90 active:scale-95 transition-all">
+              Inquire Now
+            </button>
+            <button 
+              className="md:hidden p-2 text-primary"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
+              {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
         </div>
+
+        {/* Mobile Menu Overlay */}
+        {isMobileMenuOpen && (
+          <motion.div 
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="absolute top-full left-0 w-full bg-surface border-b border-outline-variant/20 shadow-xl md:hidden flex flex-col"
+          >
+            <div className="flex flex-col px-6 py-6 space-y-6">
+              <Link href="/about" onClick={() => setIsMobileMenuOpen(false)} className="text-tertiary-container font-serif text-xl border-b border-outline-variant/10 pb-4">About Us</Link>
+              <Link href="/services" onClick={() => setIsMobileMenuOpen(false)} className="text-primary font-serif text-xl border-b border-outline-variant/10 pb-4">Services</Link>
+              <Link href="/#insights" onClick={() => setIsMobileMenuOpen(false)} className="text-primary font-serif text-xl border-b border-outline-variant/10 pb-4">Insights</Link>
+              <Link href="/#contact" onClick={() => setIsMobileMenuOpen(false)} className="text-primary font-serif text-xl border-b border-outline-variant/10 pb-4">Contact</Link>
+              <button className="bg-primary text-on-primary px-4 py-3 rounded-lg font-medium text-sm w-full mt-2">
+                Inquire Now
+              </button>
+            </div>
+          </motion.div>
+        )}
       </nav>
 
       {/* Hero Section */}
