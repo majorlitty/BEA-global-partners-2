@@ -346,10 +346,10 @@ export default function ServicesPage() {
                   </div>
 
                   {/* 3 Cards Grid */}
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  <div className="flex overflow-x-auto md:grid md:grid-cols-3 gap-4 md:gap-6 pb-6 md:pb-0 snap-x snap-mandatory -mx-4 px-4 md:mx-0 md:px-0 no-scrollbar">
                     
                     {/* Capabilities */}
-                    <div className="bg-surface-container-low p-6 rounded-2xl flex flex-col shadow-sm border border-outline-variant/20">
+                    <div className="bg-surface-container-low p-6 rounded-2xl flex flex-col shadow-sm border border-outline-variant/20 min-w-[85vw] sm:min-w-[320px] md:min-w-0 snap-center">
                       <h3 className="flex items-center gap-2 font-serif text-lg text-primary mb-4">
                         <CheckCircle2 className="w-4 h-4 text-tertiary-container" />
                         Capabilities
@@ -365,7 +365,7 @@ export default function ServicesPage() {
                     </div>
 
                     {/* Challenges */}
-                    <div className="bg-surface-container-low p-6 rounded-2xl flex flex-col shadow-sm border border-outline-variant/20">
+                    <div className="bg-surface-container-low p-6 rounded-2xl flex flex-col shadow-sm border border-outline-variant/20 min-w-[85vw] sm:min-w-[320px] md:min-w-0 snap-center">
                       <h3 className="flex items-center gap-2 font-serif text-lg text-primary mb-4">
                         <AlertTriangle className="w-4 h-4 text-orange-700/70" />
                         Client Challenges
@@ -381,7 +381,7 @@ export default function ServicesPage() {
                     </div>
 
                     {/* Outcomes */}
-                    <div className="bg-primary text-white p-6 rounded-2xl flex flex-col shadow-md">
+                    <div className="bg-primary text-white p-6 rounded-2xl flex flex-col shadow-md min-w-[85vw] sm:min-w-[320px] md:min-w-0 snap-center">
                       <h3 className="flex items-center gap-2 font-serif text-lg text-white mb-4">
                         <TrendingUp className="w-4 h-4 text-tertiary-fixed" />
                         Outcomes Delivered
