@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowRight, MapPin, Mail, ArrowUpRight, Globe, Share2 } from "lucide-react";
 import * as motion from "motion/react-client";
 import { useState } from "react";
@@ -113,23 +114,28 @@ export default function Page() {
       {/* TopNavBar */}
       <nav className="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md shadow-[0px_20px_40px_rgba(27,38,59,0.06)]">
         <div className="flex justify-between items-center px-4 md:px-8 py-4 md:py-5 max-w-screen-2xl mx-auto">
-          <div className="relative h-10 w-40 md:h-12 md:w-48">
-            <Image 
-              src="https://i.postimg.cc/Bvnw2L9G/Black-and-White-Modern-Creative-Agency-Logo-(11).png" 
-              alt="BEA Global Partners" 
-              fill 
-              className="object-contain object-left" 
-              referrerPolicy="no-referrer"
-            />
-          </div>
+          <Link href="/">
+            <div className="relative h-10 w-40 md:h-12 md:w-48">
+              <Image 
+                src="https://i.postimg.cc/Bvnw2L9G/Black-and-White-Modern-Creative-Agency-Logo-(11).png" 
+                alt="BEA Global Partners" 
+                fill 
+                className="object-contain object-left" 
+                referrerPolicy="no-referrer"
+              />
+            </div>
+          </Link>
           <div className="hidden md:flex items-center space-x-6 lg:space-x-10">
-            <a href="#" className="text-tertiary-container font-semibold border-b-2 border-tertiary-container pb-1 text-[10px] lg:text-xs tracking-wide uppercase">
+            <Link href="/about" className="text-secondary hover:text-tertiary-container transition-all duration-300 text-[10px] lg:text-xs tracking-wide uppercase">
+              About Us
+            </Link>
+            <a href="#services" className="text-secondary hover:text-tertiary-container transition-all duration-300 text-[10px] lg:text-xs tracking-wide uppercase">
               Services
             </a>
-            <a href="#" className="text-secondary hover:text-tertiary-container transition-all duration-300 text-[10px] lg:text-xs tracking-wide uppercase">
+            <a href="#insights" className="text-secondary hover:text-tertiary-container transition-all duration-300 text-[10px] lg:text-xs tracking-wide uppercase">
               Insights
             </a>
-            <a href="#" className="text-secondary hover:text-tertiary-container transition-all duration-300 text-[10px] lg:text-xs tracking-wide uppercase">
+            <a href="#contact" className="text-secondary hover:text-tertiary-container transition-all duration-300 text-[10px] lg:text-xs tracking-wide uppercase">
               Contact
             </a>
           </div>
@@ -500,7 +506,7 @@ export default function Page() {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl text-primary mb-6 md:mb-8">Begin the Consultation</h2>
+              <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl text-primary mb-6 md:mb-8">Discuss Your Strategic Priorities</h2>
               <p className="text-secondary text-sm md:text-base font-light mb-8 md:mb-12">
                 Contact our global headquarters to discuss your strategic objectives. Our advisory team is available for private briefings and institutional inquiries.
               </p>
