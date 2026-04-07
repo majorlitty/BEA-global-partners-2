@@ -207,7 +207,7 @@ export default function Page() {
             src="https://i.postimg.cc/pLxxGGVL/pexels-vlada-karpovich-7433847.jpg"
             alt="BEA Global Hero"
             fill
-            className="object-cover grayscale brightness-[0.3]"
+            className="object-cover brightness-[0.3]"
             referrerPolicy="no-referrer"
             priority
           />
@@ -278,7 +278,7 @@ export default function Page() {
                   src="https://i.postimg.cc/Bv9hckJ8/pexels_yankrukov_7693740.jpg"
                   alt="Global Strategic Advisory"
                   fill
-                  className="object-cover grayscale brightness-75 hover:grayscale-0 transition-all duration-700"
+                  className="object-cover brightness-75 transition-all duration-700"
                   referrerPolicy="no-referrer"
                 />
                 <div className="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
@@ -344,7 +344,7 @@ export default function Page() {
                   src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=2940&auto=format&fit=crop"
                   alt="Risk Management"
                   fill
-                  className="object-cover grayscale"
+                  className="object-cover"
                   referrerPolicy="no-referrer"
                 />
               </div>
@@ -373,7 +373,7 @@ export default function Page() {
                 src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2940&auto=format&fit=crop"
                 alt="Business Development & Market Entry"
                 fill
-                className="object-cover transition-transform duration-700 group-hover:scale-110 grayscale"
+                className="object-cover transition-transform duration-700 group-hover:scale-110"
                 referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors duration-500"></div>
@@ -401,7 +401,7 @@ export default function Page() {
                 src="https://i.postimg.cc/kGs3Cvwr/pexels-silverkblack-36766695.jpg"
                 alt="Regulatory Compliance"
                 fill
-                className="object-cover transition-transform duration-700 group-hover:scale-110 grayscale"
+                className="object-cover transition-transform duration-700 group-hover:scale-110"
                 referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors duration-500"></div>
